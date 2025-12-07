@@ -1,64 +1,94 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Finance</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Finance</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 
 <body>
 
-<div class="web">
-    <div class="navbar">
-        <div class="logo">
-            <img src="assests/ChatGPT_Image_Nov_15__2025__03_32_22_PM-removebg-preview.png" alt="My finance logo">
-        </div>
-
-        <div class="list">
-            <div>Home</div>
-            <div>About</div>
-            <div>Contact Us</div>
-        </div>
-    </div>
-
-    <div class="section">
-
-        <div class="h1">
-            Welcome — Register now to manage your finances better
-        </div>
-
-        <div class="regis">
-            <div class="input">
-                <input type="text" placeholder="Enter your email to register">
-            </div>
-            <div class="button">
-                <button>LET'S GO</button>
-            </div>
-        </div>
-
-        <div class="cards">
-            <div class="card transfer">
-                <h3>INTERNATIONAL TRANSFERS</h3>
-                <h5>Proceed to make an international transfer</h5>
-                <img class="img1" src="assests/44621.png" alt="">
-            </div>
-
-            <div class="card coverter">
-                <h3>CURRENCY CONVERSION</h3>
-                <h5>Convert your funds securely</h5>
-                <img class="img2" src="assests/44621.png" alt="">
-            </div>
-
-            <div class="card planner">
-                <h3>BUDGET PLANNER</h3>
-                <h5>Plan and organise your finances</h5>
-                <img class="img3" src="assests/44621.png" alt="">
-            </div>
-        </div>
-
+<!-- Navbar section -->
+<div class="navbar">
+    <div class="logo"><img src="assests/ChatGPT_Image_Nov_15__2025__03_32_22_PM-removebg-preview.png"></div>
+    <div class="list">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact Us</a>
     </div>
 </div>
 
+<!-- Home section -->
+<div id="home" class="section">
+    <div class="h1">Welcome — Register now to manage your finances better</div>
+    <div class="regis">
+        <input type="text" placeholder="Enter your email to register">
+        <button>LET'S GO</button>
+    </div>
+
+    <div class="cards">
+        <div class="card transfer">
+            <h3>INTERNATIONAL TRANSFERS</h3>
+            <h5>Proceed to make an international transfer</h5>
+            <img class="img1" src="assests/note arrowremovebg-preview.png">
+        </div>
+
+        <div class="card converter">
+            <h3>CURRENCY CONVERSION</h3>
+            <h5>Convert your funds securely</h5>
+            <img class="img2" src="assests/note arrowremovebg-preview.png">
+        </div>
+
+        <div class="card planner">
+            <h3>BUDGET PLANNER</h3>
+            <h5>Plan and organise your finances</h5>
+            <img class="img3" src="assests/note arrowremovebg-preview.png">
+        </div>
+    </div>
+</div>
+
+<!-- about section -->
+<div id="about" class="section about">
+    <h1>About My Finance</h1>
+    <p style="font-size: 20px;">My Finance is your digital partner for smarter financial decisions. From global transfers to real-time conversions and budgeting tools, we help users control their finances effortlessly and securely.</p>
+
+    <div class="about-grid">
+        <div class="abt-card">
+            <h3>Secure</h3>
+            <img src="assests/xd.gif" alt="lockimage">
+            <p>We use advanced encryption and modern security protocols.</p>
+        </div>
+        <div class="abt-card">
+            <h3>Fast</h3>
+            <img src="assests/fast.jpeg" alt="">
+            <p>Instant currency checks and speedy transfers worldwide.</p>
+        </div>
+        <div class="abt-card">
+            <h3>Reliable</h3>
+            <img src="assests/hakla.webp" alt="">
+            <p>Always available, accurate, and consistently improving.</p>
+        </div>
+    </div>
+</div>
+
+<!-- contact sectiom -->
+
+<div id="contact" class="section contact">
+    <h1>Contact Us</h1>
+    <p style="font-size: 20px;" >We'd love to hear from you! Fill the form below and our team will reach out shortly.</p>
+
+    <div class="contact-box">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+        <button>Send Message</button>
+    </div>
+</div>
 </body>
 </html>
