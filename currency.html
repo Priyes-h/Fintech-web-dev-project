@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<style>
+    h1{
+        text-align: center;
+        margin-top: 50px;
+    }
+    .body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #F0FDF4;
+    }
+    .conv{
+        width: 500px;
+        height: 500px;
+        background-color:#A7F3D0;
+        border-radius: 65px;
+        border: 8px solid #16A34A;
+    }
+ input, select {
+    width: 321px;
+    height: 63px;
+    margin: 34px 8px 31px 84px;
+    border-radius: 10px;
+    border: 2px solid #065F46;
+    font-size: 36px;
+    padding: 10px;
+}
+p {
+    margin: -59px -138px -37px 33px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+    button{
+        width: 150px;
+        height: 40px;
+        margin: 20px;
+        border-radius: 10px;            }
+</style>
+<body>
+  
+    <div class="body">
+        <div>
+            <h1>Currency Converter</h1>
+        <div class="conv">
+            
+            <input type="number" id="amount" placeholder="Enter amount">
+
+    <label></label>
+    <select id="fromCurrency">
+      <option >INR</option>
+      <option >USD</option>
+      <option >EUR</option>
+    </select>
+
+    <label></label>
+    <select id="toCurrency">
+      <option>USD</option>
+      <option >INR</option>
+      <option >EUR</option>
+    </select>
+
+    <button onclick="convert()">Convert</button>
+
+    <p id="result"></p>
+  </div>
+
+        </div>
+        
+    </div>
+    
+</body>
+
+</html>

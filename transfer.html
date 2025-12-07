@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<style>
+    .centre{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        justify-content: space-between;
+    }
+.left select, .right select {
+    margin: 7px 102px 11px 122px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid #065F46;
+
+}
+h1{
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 50px;
+}
+button{
+    width: 150px;
+    height: 40px;
+    margin-left: 47%;
+    border-radius: 10px;          
+    background-color:#A7F3D0;
+ border: 2px solid #065F46;
+margin-top: 50px;
+}
+p{
+        margin: 13px 41px 39px 1500px;
+}
+img{
+    width: 200px;
+    height: 200px;
+    margin-left: 45%;
+    opacity: 0;
+}
+ </style>
+<body>
+        <h1>make international transfer</h1>
+<div class="centre">
+
+    <div class="left">
+        <select id="fromCurrency">
+        <option >INR</option>
+         <option >USD</option>
+        <option >EUR</option>
+        </select>
+    </div>
+    <div class="right">
+        <select id="toCurrency">
+        <option >USD</option>
+         <option >INR</option>
+        <option >EUR</option>
+        </select>
+    </div>
+</div>
+<div class="but">
+    <button onclick="transfer()">Transfer</button>
+</div>
+<img src="assests/ChatGPT Image Dec 7, 2025, 07_15_11 PM.png" alt="" srcset="" id="sucess" >
+<p class="pop"></p>
+
+    
+</body>
+</html>

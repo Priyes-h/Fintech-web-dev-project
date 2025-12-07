@@ -5,9 +5,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>My Finance</title>
+<script src="script.js"></script>
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -33,13 +35,13 @@
     </div>
 
     <div class="cards">
-        <div class="card transfer">
+        <div class="card transfer" onclick="trans()">
             <h3>INTERNATIONAL TRANSFERS</h3>
             <h5>Proceed to make an international transfer</h5>
             <img class="img1" src="assests/note arrowremovebg-preview.png">
         </div>
 
-        <div class="card converter">
+        <div class="card converter" onclick="currency()">
             <h3>CURRENCY CONVERSION</h3>
             <h5>Convert your funds securely</h5>
             <img class="img2" src="assests/note arrowremovebg-preview.png">
